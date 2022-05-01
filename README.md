@@ -3,7 +3,7 @@
 
 # 免责声明：此代码仅学习使用，请勿用于商业用途，如拿去非法使用与本人无关！
 
-# [一、spider -- 京东](.....)
+# [一、spider -- 京东](https://github.com/ywygblz/spider/tree/main/1-%E4%BA%AC%E4%B8%9C)
 
 ### 1、通过商家id爬取商品数据及评论
 
