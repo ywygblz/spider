@@ -17,4 +17,4 @@
 
 > 获取id后可值传入get_goods_evaluat(productId: str)函数获取评论
 
-![爬虫图片](https://github.com/ywygblz/spider/tree/main/1-%E4%BA%AC%E4%B8%9C/images)
+![爬虫图片](https://github.com/ywygblz/spider/blob/main/1-%E4%BA%AC%E4%B8%9C/images/%E4%BA%AC%E4%B8%9C%E7%88%AC%E8%99%AB%E5%9B%BE%E4%BE%8B.png)
