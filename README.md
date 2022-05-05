@@ -10,6 +10,7 @@
 
 1. [spider -- 京东](https://github.com/ywygblz/spider/blob/main/README.md#%E4%B8%80spider----京东)
 2. [spider -- 天眼查滑动验证码](https://github.com/ywygblz/spider/blob/main/README.md#%E4%BA%8Cspider----天眼查滑动验证码)
+3. [spider -- 链家二手房源爬取存入mysql数据库](#三spider----链家二手房源爬取存入mysql数据库3-e993bee5aeb6)
 
 
 # [一、spider -- 京东](https://github.com/ywygblz/spider/tree/main/1-%E4%BA%AC%E4%B8%9C)
@@ -37,3 +38,48 @@
 ### 实现效果
 
 ![实现效果](https://github.com/ywygblz/spider/blob/main/2-%E5%A4%A9%E7%9C%BC%E6%9F%A5%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81/%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81%E7%A0%B4%E8%A7%A3_.gif)
+
+# [三、spider -- 链家二手房源爬取存入mysql数据库](/3-%E9%93%BE%E5%AE%B6/)
+
+## 1.以 湖北武汉 为例，先拿到所有区的名字和url
+
+如下图（只显示部分）
+![到所有区的名字和url](/3-%E9%93%BE%E5%AE%B6/%E6%AD%A6%E6%B1%89%E6%89%80%E6%9C%89%E5%8C%BA%E5%90%8D%E7%A7%B0%E5%92%8Curl.png)
+
+## 2.新建数据表
+```MySql
+/*
+['104108454851', '中建文华星城-文化大道', '113.03平米', '158万元', '13978元/平', '3室2厅', '南北', '简装', '高楼层(共34层)', '2016年建', '板塔结合']
+*/
+create table lianjia_wh_used_2(
+id int primary key not null auto_increment,
+url_id varchar(15) not null,
+region varchar(5) not null,
+name varchar(20) not null,
+area varchar(10),
+money varchar(7),
+price varchar(10),
+trait_1 varchar(10),
+trait_2 varchar(10),
+trait_3 varchar(10),
+trait_4 varchar(10),
+trait_5 varchar(10),
+trait_6 varchar(10),
+trait_7 varchar(10)
+);
+```
+
+
+## 3.运行get_data_ls方法即可
+```Python
+url_prefix = 'https://wh.lianjia.com/ershoufang/baibuting/'
+district = '江岸'
+get_data_ls(url_prefix=url_prefix, district=district)
+```
+
+## 4.数据分析
+房源数据（10万条中的部分）
+!['房源数据'](/3-%E9%93%BE%E5%AE%B6/%E6%88%BF%E6%BA%90%E6%95%B0%E6%8D%AE.png)
+
+其它分析：待续...
+
