@@ -118,7 +118,7 @@ def get_data_ls(url_prefix,district):
                 save_judge = True
             else:
                 save_judge = False
-
+            # 写入数据库
             write_sql(data_ls=data_ls, district=district, save_judge=save_judge)
 
         if page_num == page_max:
@@ -139,7 +139,7 @@ def write_sql(data_ls:list,district:str,save_judge=False):
     # l = ['104108461629', '江岸', '海赋江城天韵-百步亭', '88.68平米', '225万元', '25373元/平', '2室2厅', '南', '精装', '低楼层(共34层)', '2016年建', '板塔结合']
     data_ls.insert(1,district) # 加入区
     while len(data_ls) < 13:
-        data_ls.append('null') # 没有12位的补齐位数
+        data_ls.append('null') # 没有13位的补齐位数
     com = "insert into lianjia_wh_used_2 values(0,'" + "','".join(data_ls) + "');"
 
 
