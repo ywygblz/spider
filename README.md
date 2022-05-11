@@ -81,6 +81,15 @@ get_data_ls(url_prefix=url_prefix, district=district)
 房源数据（10万条中的部分）
 !['房源数据'](/3-%E9%93%BE%E5%AE%B6/%E6%88%BF%E6%BA%90%E6%95%B0%E6%8D%AE.png)
 
-其它分析：待续...
-![1111](http://htmlpreview.github.io/?https://github.com/ywygblz/spider/blob/main/3-%E9%93%BE%E5%AE%B6/%E6%95%B0%E6%8D%AE%E5%9B%BE/1-%E7%9B%B4%E6%96%B9%E5%9B%BE.html)
-
+[1.直方图(点击查看)](https://ywygblz.github.io/spider/3-链家/数据图/1-直方图.html)
+[![](3-链家/数据图/1-直方图.png)](https://ywygblz.github.io/spider/3-链家/数据图/1-直方图.html)
+[2.直方图(点击查看)](https://ywygblz.github.io/spider/3-链家/数据图/2-圆饼图.html)
+[![](3-链家/数据图/2-圆饼图.png)](https://ywygblz.github.io/spider/3-链家/数据图/2-圆饼图.html)
+[3.折线图(点击查看)](https://ywygblz.github.io/spider/3-链家/数据图/3-折线图.html)
+[![](3-链家/数据图/3-折线图.png)](https://ywygblz.github.io/spider/3-链家/数据图/3-折线图.html)
+[4.词云图(点击查看)](https://ywygblz.github.io/spider/3-链家/数据图/4-词云图.html)
+[![](3-链家/数据图/4-词云图.png)](https://ywygblz.github.io/spider/3-链家/数据图/4-词云图.html)
+[5.武汉市地图(点击查看)](https://ywygblz.github.io/spider/3-链家/数据图/5-武汉市地图.html)
+[![](3-链家/数据图/5-武汉市地图.png)](https://ywygblz.github.io/spider/3-链家/数据图/5-武汉市地图.html)
+[6.大屏展示图(点击查看)](https://ywygblz.github.io/spider/3-链家/数据图/6-大屏展示图.html)
+[![](3-链家/数据图/6-大屏展示图.png)](https://ywygblz.github.io/spider/3-链家/数据图/6-大屏展示图.html)
