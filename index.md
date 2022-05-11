@@ -25,6 +25,7 @@ Syntax highlighted code block
 
 [Link](https://cmderq.github.io/1-%E7%9B%B4%E6%96%B9%E5%9B%BE.html) and ![Image](src)
 ```
+[Link](https://cmderq.github.io/1-%E7%9B%B4%E6%96%B9%E5%9B%BE.html)
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
