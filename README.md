@@ -11,7 +11,7 @@
 1. [spider -- 京东](https://github.com/ywygblz/spider/blob/main/README.md#%E4%B8%80spider----京东)
 2. [spider -- 天眼查滑动验证码](https://github.com/ywygblz/spider/blob/main/README.md#%E4%BA%8Cspider----天眼查滑动验证码)
 3. [spider -- 链家二手房源爬取存入mysql数据库](#%E4%B8%89spider----链家二手房源爬取存入mysql数据库)
-
+4. [spider -- 网易云评论 -- js逆向](README.md:97)
 
 # [一、spider -- 京东](https://github.com/ywygblz/spider/tree/main/1-%E4%BA%AC%E4%B8%9C)
 
@@ -93,3 +93,15 @@ get_data_ls(url_prefix=url_prefix, district=district)
 [![](3-链家/数据图/5-武汉市地图.png)](https://ywygblz.github.io/spider/3-链家/数据图/5-武汉市地图.html)<br>
 ### [6.大屏展示图(点击查看)](https://ywygblz.github.io/spider/3-链家/数据图/6-大屏展示图.html)<br>
 [![](3-链家/数据图/6-大屏展示图.png)](https://ywygblz.github.io/spider/3-链家/数据图/6-大屏展示图.html)<br>
+
+# [四、spider -- 网易云评论 -- js逆向](4-网易云评论)
+### 1.主要搞定这两个参数
+![img.png](4-网易云评论/img.png)
+### 2.扣完后验证
+```javascript
+//会用到这个包
+var CryptoJS = require("crypto-js");
+```
+![img.png](4-网易云评论/js逆向结果.png)
+### 3.在用python引用下结果在请求就有结果了
+![img.png](4-网易云评论/请求结果.png)
