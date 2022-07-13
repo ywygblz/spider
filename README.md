@@ -12,6 +12,7 @@
 2. [spider -- 天眼查滑动验证码](https://github.com/ywygblz/spider/blob/main/README.md#%E4%BA%8Cspider----天眼查滑动验证码)
 3. [spider -- 链家二手房源爬取存入mysql数据库](#%E4%B8%89spider----链家二手房源爬取存入mysql数据库)
 4. [spider -- 网易云评论 -- js逆向](#%E5%9B%9Bspider----网易云评论----js逆向)
+5. [spider -- 豆瓣读书 -- js逆向](#%E4%BA%94spider----豆瓣读书----js逆向)
 
 # [一、spider -- 京东](https://github.com/ywygblz/spider/tree/main/1-%E4%BA%AC%E4%B8%9C)
 
@@ -105,3 +106,14 @@ var CryptoJS = require("crypto-js");
 ![img.png](4-网易云评论/js逆向结果.png)
 ### 3.在用python引用下结果在请求就有结果了
 ![img.png](4-网易云评论/请求结果.png)
+
+# [五、spider -- 豆瓣读书 -- js逆向](5-豆瓣)
+### 1.需要破解加密的字符串
+![img.png](5-豆瓣/加密的字符串.png)
+### 2.首次会得到一个没有序列化的数组
+![img.png](5-豆瓣/第一次数组.png)
+### 3.在Rt()(t)函数运行后会得到一个序列化的数组
+![img.png](5-豆瓣/第二次数组.png)
+### 4.在用python解析一下得到的结果
+#### 引用js文件的结果可能有编码的问题，这里使用cmd重定向的方式保存
+![img.png](5-豆瓣/豆瓣读书结果.png)
