@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}注册{% endblock %}
+{% block login %}{{name}}{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container" style="margin: 0px auto">
+	<div style="margin: 0px auto">
+
+        <form class='form-login' action="/register/" method="post">
+              {% csrf_token %}
+              <h2 class="text-center">欢迎注册</h2>
+              <div class="form-group">
+
+                <label for="id_username">用户名:
+				<span style="color: red;">{{ register_user }}</span>
+				</label>
+
+                <input type="text" name='username' class="form-control" id="id_username" placeholder="Username" autofocus required>
+                <div id="result"></div>
+              </div>
+              <div class="form-group">
+                <label for="id_password">密码：
+                <span style="color: red;">{{ register_password }}</span>
+                </label>
+                <input type="password" name='password' class="form-control" id="id_password" placeholder="Password" required>
+              </div>
+              <button type="reset" class="btn btn-default pull-left">重置</button>
+              <button type="submit" class="btn btn-primary pull-right">提交</button>
+            <br>
+            <br>
+            <h1>{{successfully}}</h1>
+        </form>
+
+
+
+	</div>
+</div>
+
+
+
+{% endblock %}

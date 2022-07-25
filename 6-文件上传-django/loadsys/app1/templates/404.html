@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}注册{% endblock %}
+{% block login %}{{name}}{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container" style="margin: 0px auto">
+	<div style="margin: 0px auto">
+	<img src="{% static 'img/404.jpg' %}" alt="">
+	<h1 id='show'></h1>
+	<script type="text/javascript">
+		function jump(){
+			file = document.getElementById('show')
+			window.location.href = `/login/`
+		}
+		
+		var t=5;//设定跳转的时间
+		function refer(){
+			if(t==0){
+			jump(); //#设定跳转的链接地址
+			}
+			document.getElementById('show').innerHTML="将在"+t+"秒后自动跳转..."; // 显示倒计时
+			t--;// 计数器递减
+		} 
+		setInterval("refer()",1000); //启动1秒定时
+	</script>
+
+	</div>
+	</div>
+{% endblock %}

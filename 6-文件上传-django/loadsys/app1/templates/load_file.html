@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}加载文件{% endblock %}
+{% block login %}{{name}}{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container" style="margin: 0px auto">
+	<div style="margin: 0px auto">
+    <form method="post" action="" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        <label>
+			<h1>上传文件</h1>
+		</label>
+
+        <input type="file" name="myfile"/>
+
+       <br />
+
+        <input type="submit" value="上传文件" style="height: 200xp;width: 800xp;"/>
+        <h1>{{ state }}</h1>
+		
+    </form>
+	</div>
+	</div>
+{% endblock %}

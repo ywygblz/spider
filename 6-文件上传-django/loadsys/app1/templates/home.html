@@ -1,0 +1,55 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}文件系统{% endblock %}
+{% block login %}{{name}}{% endblock %}
+{% block css %}
+{#    <link rel="stylesheet" href="{% static 'css/login.css' %}">#}
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class="container" style="margin: 0 auto">
+	<div style="margin: 0 auto">
+		<h1 style="text-align: center;">文件系统主页</h1>
+		<br>
+
+
+
+		<table border="1" style="border: 1px solid black;width: 1200px;text-align: center;margin: 0 auto ;font-size: 150%;">
+			<tr style="height: 50px;">
+				<th style="text-align: center;width: 100px;">NO.</th>
+				<th style="text-align: center;width: 500px;">文件名</th>
+				<th style="text-align: center;width: 150px;">大小</th>
+				<th style="text-align: center;width: 150px;">文件类型</th>
+				<th style="text-align: center;width: 200px">操作</th>
+			</tr>
+			{{all_text|safe}}
+
+		</table>
+
+		<script type="text/javascript">
+            function download(index) {
+                {#window.location.href = `/download?filename=${index}`#}
+                fetch(`/download?filename=${index}`).then(async res => await res.blob()).then((blob) => {
+                      const a = document.createElement('a');
+                      a.style.display = 'none';
+                      a.href = URL.createObjectURL(blob);
+                      a.download = document.getElementsByClassName('file_name')[index].innerHTML;
+                      document.body.appendChild(a);
+                      a.click();
+                      document.body.removeChild(a);
+})
+            }
+
+            function file_delete(index) {
+				alert('暂未实现')
+            }
+
+		</script>
+	</div>
+</div>
+<!--</body>-->
+<!--</html>-->
+{% endblock %}
