@@ -33,6 +33,9 @@
 
 ![爬虫图片](https://github.com/ywygblz/spider/blob/main/1-%E4%BA%AC%E4%B8%9C/images/%E4%BA%AC%E4%B8%9C%E7%88%AC%E8%99%AB%E5%9B%BE%E4%BE%8B.png)
 
+
+# [回到目录 ↑](#目录)
+
 # [二、spider -- 天眼查滑动验证码](https://github.com/ywygblz/spider/tree/main/2-%E5%A4%A9%E7%9C%BC%E6%9F%A5%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81)
 
 ## 基于自动化测试功具selenium及cv2中的模版对比实现滑动验证码破解
@@ -43,6 +46,9 @@
 
 ![实现效果](https://github.com/ywygblz/spider/blob/main/2-%E5%A4%A9%E7%9C%BC%E6%9F%A5%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81/%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81%E7%A0%B4%E8%A7%A3_.gif)
 
+
+
+# [回到目录 ↑](#目录)
 # [三、spider -- 链家二手房源爬取存入mysql数据库](/3-%E9%93%BE%E5%AE%B6/)
 
 ## 1.以 湖北武汉 为例，先拿到所有区的名字和url
@@ -97,6 +103,9 @@ get_data_ls(url_prefix=url_prefix, district=district)
 [![](3-链家/数据图/5-武汉市地图.png)](https://ywygblz.github.io/spider/3-链家/数据图/5-武汉市地图.html)<br>
 ### [6.大屏展示图(点击查看)](https://ywygblz.github.io/spider/3-链家/数据图/6-大屏展示图.html)<br>
 [![](3-链家/数据图/6-大屏展示图.png)](https://ywygblz.github.io/spider/3-链家/数据图/6-大屏展示图.html)<br>
+# [回到目录 ↑](#目录)
+
+
 
 # [四、spider -- 网易云评论 -- js逆向](4-网易云评论)
 ### 1.主要搞定这两个参数
@@ -109,6 +118,9 @@ var CryptoJS = require("crypto-js");
 ![img.png](4-网易云评论/js逆向结果.png)
 ### 3.在用python引用下结果在请求就有结果了
 ![img.png](4-网易云评论/请求结果.png)
+# [回到目录 ↑](#目录)
+
+
 
 # [五、spider -- 豆瓣读书 -- js逆向](5-豆瓣)
 ### 1.需要破解加密的字符串
@@ -129,6 +141,9 @@ var CryptoJS = require("crypto-js");
 ### 主页
 ![img.png](6-文件上传-django/主页.png)
 
+# [回到目录 ↑](#目录)
+
+
 # [七、TK可视化界面--飞卢中文网--便捷工具](7-飞卢小说工具-gui)
 > 针对飞卢中文网帐户上的小说进行批量处理
 
@@ -145,4 +160,4 @@ var CryptoJS = require("crypto-js");
 3. 报错提示
 ![img.png](7-飞卢小说工具-gui/报错提示.png)
 
-# [回到目录](#目录)
+# [回到目录 ↑](#目录)
