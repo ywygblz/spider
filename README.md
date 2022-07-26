@@ -14,6 +14,8 @@
 4. [spider -- 网易云评论 -- js逆向](#%E5%9B%9Bspider----网易云评论----js逆向)
 5. [spider -- 豆瓣读书 -- js逆向](#%E4%BA%94spider----豆瓣读书----js逆向)
 6. [django -- 文件上传 -- 对称加密](#六django----文件上传----对称加密)
+7. [tk可视化界面 -- 飞卢中文网 -- 便捷工具](#七tk可视化界面--飞卢中文网--便捷工具)
+
 
 # [一、spider -- 京东](https://github.com/ywygblz/spider/tree/main/1-%E4%BA%AC%E4%B8%9C)
 
@@ -126,5 +128,21 @@ var CryptoJS = require("crypto-js");
 ![img.png](6-文件上传-django/登陆页.png)
 ### 主页
 ![img.png](6-文件上传-django/主页.png)
+
+# 七、tk可视化界面--飞卢中文网--便捷工具
+> 针对飞卢中文网帐户上的小说进行批量处理
+
+### 主要使用技术
+> 1.数据抓取(爬虫)\
+> 2.可视化模块tkinter\
+> 3.可视化美化库ttkbootstrap\
+> 4.多线程(防止主界面假死)\
+> 5.软件打包pyinstaller
+1. 主界面和副页面
+![img.png](7-飞卢小说工具-gui/主界面和副页面.png)
+2. 运行结果
+![img.png](7-飞卢小说工具-gui/运行结果.png)
+3. 报错提示
+![img.png](7-飞卢小说工具-gui/报错提示.png)
 
 # [回到目录](#目录)
